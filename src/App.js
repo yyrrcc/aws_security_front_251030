@@ -40,6 +40,8 @@ function App() {
   const handleLogout = () => {
     localStorage.removeItem("token");
     setToken("");
+    setUsername("");
+    setPassword("");
     setMessage(username + "로그아웃 성공");
   };
 
